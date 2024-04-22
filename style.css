@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+}
+
+.sprite {
+  position: absolute;
+  bottom: 10%;
+  width: 100px;
+  height: 100px;
+  background-repeat: no-repeat;
+}
+
+#cat1 {
+  right: 100%;
+  animation: walkMovement1 3s linear infinite, cycleFrames 1s steps(4) infinite;
+  background-image: url("cat1_walking.svg");
+}
+
+@keyframes walkMovement1 {
+  from {
+    right: 100%;
+  }
+  to {
+    right: 60%;
+  }
+}
+
+@keyframes cycleFrames {
+  from {
+    background-position: 0px;
+  }
+  to {
+    background-position: -400px;
+  }
+}
