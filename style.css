@@ -2,6 +2,12 @@
   box-sizing: border-box;
 }
 
+body, html {
+  margin: 0;
+  height: 100%;
+  position: relative;
+}
+
 .sprite {
   position: absolute;
   bottom: 10%;
@@ -11,25 +17,22 @@
 }
 
 #cat1 {
-  right: 100%;
-  animation: walkMovement1 3s linear infinite, cycleFrames 1s steps(4) infinite;
+  right: 80%;
   background-image: url("cat1_walking.svg");
+  animation: walkIn 3s linear forwards, walkCycle 1.5s steps(4) 2 forwards;
 }
 
-@keyframes walkMovement1 {
-  from {
-    right: 100%;
-  }
-  to {
-    right: 60%;
-  }
+@keyframes walkIn {
+  from { right: 100%; }
+  to { right: 80%; }
 }
 
-@keyframes cycleFrames {
-  from {
-    background-position: 0px;
-  }
-  to {
-    background-position: -400px;
-  }
+@keyframes walkCycle {
+  from { background-position: 0px 0; }
+  to { background-position: -400px 0; }
+}
+
+@keyframes scratchCycle {
+  0% { background-position: 0px -100px; }
+  100% { background-position: -800px -100px; }
 }
