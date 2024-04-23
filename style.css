@@ -19,7 +19,7 @@ body, html {
 #cat1 {
   right: 80%;
   background-image: url("cat1_walking.svg");
-  animation: walkIn 3s linear forwards, walkCycle 1.5s steps(4) 2 forwards;
+  animation: walkIn 4s linear forwards, walkCycle 1.5s steps(4) 2.5 forwards;
 }
 
 @keyframes walkIn {
