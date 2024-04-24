@@ -2,7 +2,8 @@
   box-sizing: border-box;
 }
 
-body, html {
+body,
+html {
   margin: 0;
   height: 100%;
   position: relative;
@@ -17,22 +18,58 @@ body, html {
 }
 
 #cat1 {
-  right: 80%;
+  right: 70%;
   background-image: url("cat1_walking.svg");
   animation: walkIn 4s linear forwards, walkCycle 1.5s steps(4) 2.5 forwards;
 }
 
+#cat2 {
+  left: 70%;
+  background-image: url("cat2_walking.svg");
+  animation: walkIn2 4s linear forwards, walkCycle 1.5s steps(4) 2.5 forwards;
+}
+
 @keyframes walkIn {
-  from { right: 100%; }
-  to { right: 80%; }
+  from {
+    right: 100%;
+  }
+  to {
+    right: 70%;
+  }
+}
+
+@keyframes walkIn2 {
+  from {
+    left: 100%;
+  }
+  to {
+    left: 70%;
+  }
 }
 
 @keyframes walkCycle {
-  from { background-position: 0px 0; }
-  to { background-position: -400px 0; }
+  from {
+    background-position: 0px 0;
+  }
+  to {
+    background-position: -400px 0;
+  }
 }
 
 @keyframes scratchCycle {
-  0% { background-position: 0px -100px; }
-  100% { background-position: -800px -100px; }
+  0% {
+    background-position: 0px -100px;
+  }
+  100% {
+    background-position: -800px -100px;
+  }
+}
+
+@keyframes scratchCycle2 {
+  0% {
+    background-position: 0px -100px;
+  }
+  100% {
+    background-position: -1200px -100px;
+  }
 }
