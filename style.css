@@ -11,7 +11,7 @@ html {
 
 .sprite {
   position: absolute;
-  bottom: 10%;
+  bottom: 3%;
   width: 100px;
   height: 100px;
   background-repeat: no-repeat;
@@ -72,4 +72,24 @@ html {
   100% {
     background-position: -1200px -100px;
   }
+}
+
+.sign {
+  position: absolute;
+  left: 10%;
+  top: 15%;
+  width: 80%;
+  height: 70%;
+  background-color: black;
+  color: wheat;
+  text-align: center;
+  z-index: -2;
+}
+
+#curtain {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 95vh;
+  z-index: -1;
 }
