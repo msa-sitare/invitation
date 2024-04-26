@@ -95,6 +95,22 @@ html {
   padding: 5px;
 }
 
+.sign5 {
+  position: absolute;
+  width: 300px;
+  right: -100%;
+  top: 20px;
+}
+
+@keyframes walkIn3 {
+  from {
+    left: 100%;
+  }
+  to {
+    left: -100%;
+  }
+}
+
 .curtain1,
 .curtain2,
 .curtain3,
@@ -103,4 +119,12 @@ html {
   position: absolute;
   width: 100%;
   height: 95%;
+}
+
+@media (min-width: 600px) {
+  .sign {
+    left: 50%;
+    transform: translateX(-50%);
+    width: 600px;
+  }
 }
