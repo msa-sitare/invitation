@@ -84,7 +84,7 @@ html {
   background-color: rgb(169, 169, 169);
   text-align: center;
   z-index: -2;
-  padding: 2%;
+  padding: 5px;
 }
 
 .sign img {
@@ -94,10 +94,12 @@ html {
   border: 1px solid black;
 }
 
-#curtain {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 95vh;
+.curtain1,
+.curtain2,
+.curtain3,
+.curtain4 {
   z-index: -1;
+  position: absolute;
+  width: 100%;
+  height: 95%;
 }
