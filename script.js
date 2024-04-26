@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function () {
+/*document.addEventListener("DOMContentLoaded", function () {
   const cat1 = document.getElementById("cat1");
   const cat2 = document.getElementById("cat2");
   const curtain1 = document.querySelector(".curtain1");
@@ -28,4 +28,4 @@ document.addEventListener("DOMContentLoaded", function () {
       cat2.style.animation = "scratchCycle2 4s steps(12) 1 forwards";
     }
   });
-});
+}); */

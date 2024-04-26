@@ -80,18 +80,19 @@ html {
   top: 4%;
   width: 90%;
   height: 88%;
-  border: 1px solid black;
-  background-color: rgb(169, 169, 169);
-  text-align: center;
   z-index: -2;
-  padding: 5px;
 }
 
-.sign img {
+.sign1, .sign2, .sign3, .sign4 {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
-  background-color: white;
+  max-width: 600px;
+  background-color: rgb(88, 51, 5);
   border: 1px solid black;
+  padding: 5px;
 }
 
 .curtain1,
